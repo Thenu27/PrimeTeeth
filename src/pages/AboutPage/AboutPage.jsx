@@ -16,7 +16,9 @@ const AboutPage=()=>{
             <div className='about-page-card-container'>
 
                 <div className='about-page-card'>
-                    <StarModelExp/>
+                    <div className='about-star-model'>
+                         <StarModelExp/>
+                    </div>
                     <div className='about-page-card-info'>
                         <h1 className='about-page-card-title'>15+</h1>
                         <p className='about-page-card-text'>Years Experience</p>
@@ -24,7 +26,9 @@ const AboutPage=()=>{
                 </div>
 
                 <div className='about-page-card'>
-                    <ServiceModelExp/>
+                    <div className='about-service-model'>
+                        <ServiceModelExp/>
+                    </div>
                     <div className='about-page-card-info'>
                         <h1 className='about-page-card-title'>100+</h1>
                         <p className='about-page-card-text'>Happy Patients</p>
@@ -32,7 +36,9 @@ const AboutPage=()=>{
                 </div>
 
                 <div className='about-page-card'>
+                    <div className='about-tools'>
                     <ToolsExp/>
+                    </div>
                     <div className='about-page-card-info'>
                         <h1 className='about-page-card-title'>6+</h1>
                         <p className='about-page-card-text'>Services provided</p>

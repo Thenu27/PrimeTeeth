@@ -3,6 +3,7 @@
     min-height: 100vh;
     background-color: #F3D5FF;
     overflow: hidden;
+    padding-bottom: 100px;
 }
 
 .page-header{

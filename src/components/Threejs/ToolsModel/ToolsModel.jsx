@@ -13,7 +13,7 @@ const ToolsModel=()=>{
 
     return(
         <>
-            <primitive scale={1.4} ref={modelRef} object={DentalTools.scene}/>      
+            <primitive position={[0,-0.6,-0.2]} rotation={[0,0,0]} scale={1.4} ref={modelRef} object={DentalTools.scene}/>      
         </>
     )
 }

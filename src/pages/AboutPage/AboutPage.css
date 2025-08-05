@@ -1,6 +1,7 @@
 .about-page{
     background-color: #F9E9FF;
     min-height: 100vh;
+    padding-bottom: 100px;
 }
 
 .about-page-sub-text-container{
@@ -29,6 +30,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .about-page-card{
@@ -168,6 +170,13 @@
     margin-top: 00px;
     border: 1px solid white;
 }
+
+.about-service-model{
+    width: 33%;
+    margin: auto;
+}
+
+
 
 /* Tablet Styles */
 @media screen and (max-width: 1024px) {
@@ -331,7 +340,7 @@
     
     .about-page-card {
         width: 250px;
-        height: 250px;
+        height: 280px;
     }
     
     .about-story-title {
@@ -360,7 +369,7 @@
 @media screen and (max-width: 320px) {
     .about-page-card {
         width: 220px;
-        height: 220px;
+        height: 280px;
     }
     
     .about-story-title {
