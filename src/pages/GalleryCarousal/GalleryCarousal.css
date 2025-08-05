@@ -1,0 +1,131 @@
+.gallery-carousal {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: clamp(350px, 60vw, 500px);
+  margin: 0 auto;
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%);
+}
+
+.slide img {
+  width: clamp(200px, 40vw, 300px);
+  height: clamp(250px, 50vw, 400px);
+  border-radius: clamp(10px, 3vw, 20px);
+  object-fit: cover;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+  position: absolute;
+  bottom: clamp(10px, 3vw, 20px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: clamp(8px, 2vw, 10px) clamp(15px, 4vw, 20px);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  background: #EC047E;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+  min-width: clamp(40px, 8vw, 50px);
+  min-height: clamp(40px, 8vw, 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons button:hover {
+  background: #6c003a;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+
+  
+  .carousel-container {
+    height: clamp(300px, 50vw, 400px);
+  }
+  
+  .slide img {
+    width: clamp(180px, 35vw, 250px);
+    height: clamp(220px, 45vw, 320px);
+  }
+  
+
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+
+  .gallery-page{
+    min-height: 200vh;
+  }
+  .carousel-container {
+    height: clamp(280px, 70vw, 350px);
+    perspective: 800px;
+  }
+  
+  .slide img {
+    width:300px ;
+    /* height: ; */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .buttons {
+    bottom: 15px;
+    gap: 15px;
+  }
+  
+  .buttons button {
+    min-width: 45px;
+    min-height: 45px;
+    font-size: 1.3rem;
+  }
+  
+
+}
+
+/* Very small mobile devices */
+@media (max-width: 320px) {
+  .carousel-container {
+    min-height: 350px;
+    padding-bottom: 20px;
+  }
+  
+  .slide img {
+    width: 240px;
+    height: 280px;
+    border: 1px solid black;
+  }
+  
+  .buttons button {
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 1.1rem;
+  }
+}

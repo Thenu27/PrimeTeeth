@@ -1,0 +1,148 @@
+.contact-bar{
+   width: 90vw;
+   max-width: 1200px;
+   height: 135px;
+   background-color: #ffffff;
+   margin: auto;
+   border-radius: 46px;
+   box-shadow: 0px 7px 35px rgba(0,0,0,0.25);
+   margin-top: -60px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding: 0 20px;
+   box-sizing: border-box;
+}
+
+.contact-category{
+   width: 30%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 6px;
+   padding: 10px;
+}
+
+.contact-category img{
+   width: 32px;
+   height: 32px;
+   object-fit: contain;
+}
+
+.divider{
+   background-color: #9F9F9F;
+   height: 80%;
+   width: 2px;
+   margin: auto;
+   flex-shrink: 0;
+}
+
+.contact-category-title{
+   font-family: 'Poppins',sans-serif;
+   font-size: 1.3rem;
+   font-weight: 600;
+   text-align: center;
+   margin: 0;
+   line-height: 1.2;
+}
+
+.contact-category-info{
+   font-family: 'Lato',sans-serif;
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: #662382;
+   text-align: center;
+   margin: 0;
+   line-height: 1.3;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+   .contact-bar {
+       width: 95vw;
+       height: 120px;
+       border-radius: 30px;
+       margin-top: -50px;
+       padding: 0 15px;
+       display: none;
+   }
+   
+   .contact-category img{
+       width: 28px;
+       height: 28px;
+   }
+   
+   .contact-category-title {
+       font-size: 1.1rem;
+   }
+   
+   .contact-category-info {
+       font-size: 1rem;
+   }
+   
+   .divider {
+       height: 70%;
+   }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+   .contact-bar {
+       width: 95vw;
+       height: auto;
+       min-height: 100px;
+       border-radius: 20px;
+       margin-top: -40px;
+       padding: 15px 10px;
+       flex-direction: column;
+       gap: 15px;
+       display: block;
+
+   }
+   
+   .contact-category {
+       width: 100%;
+       gap: 4px;
+       padding: 5px;
+   }
+   
+   .contact-category img{
+       width: 24px;
+       height: 24px;
+   }
+   
+   .divider {
+       display:block;
+   }
+   
+   .contact-category-title {
+       font-size: 1rem;
+   }
+   
+   .contact-category-info {
+       font-size: 0.9rem;
+   }
+}
+
+/* Very small mobile devices */
+@media (max-width: 320px) {
+   .contact-bar {
+       padding: 12px 8px;
+       gap: 12px;
+   }
+   
+   .contact-category img{
+       width: 20px;
+       height: 20px;
+   }
+   
+   .contact-category-title {
+       font-size: 0.9rem;
+   }
+   
+   .contact-category-info {
+       font-size: 0.8rem;
+   }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Cosmetic",
+    "title2": "Dentistry",
+    "details": "Cosmetic dentistry is all about enhancing the appearance of your smile. Whether you’re looking to whiten your teeth, fix chips or gaps, or get a full smile makeover, our cosmetic treatments are designed to help you smile with confidence. We combine modern techniques with a gentle approach to deliver beautiful, natural-looking results.",
+    "point1": "Teeth Whitening",
+    "point2": "Teeth Whitening",
+    "point3": "Teeth Whitening",
+    "img": "https://i.postimg.cc/sDBp6sD9/Group-46.png"
+  },
+  {
+    "id": "2",
+    "title": "Orthodontics",
+    "title2": "(Braces & Aligners)",
+    "details": "Orthodontic treatment helps align and straighten teeth, correct bite issues, and improve overall dental health. Whether it’s traditional metal braces or clear aligners, we offer customized solutions for children, teens, and adults to help you achieve a confident, well-aligned smile.",
+    "point1": "Metal Braces (Both Arches)",
+    "point2": "Ceramic Braces",
+    "point3": "Self Ligating Braces",
+    "img": "https://i.postimg.cc/ncPyYLsY/Group-46-1.png"
+  },
+  {
+    "id": "3",
+    "title": "General",
+    "title2": "Dentistry",
+    "details": "General dentistry focuses on maintaining your overall oral health through regular check-ups, cleanings, and basic treatments. From preventing tooth decay to treating cavities and gum issues, we’re here to keep your smile healthy, clean, and pain-free — for all ages.",
+    "point1": "Teeth Whitening",
+    "point2": "Dental Veneers",
+    "point3": "Smile make over package",
+    "img": "https://i.postimg.cc/43W4GgL8/Group-48-1.png"
+  },
+  {
+    "id": "4",
+    "title": "Dental",
+    "title2": "Implants",
+    "details": "Dental implants are a permanent solution for replacing missing teeth. They look, feel, and function like natural teeth — restoring both your smile and confidence. Whether you’ve lost a single tooth or multiple, implants offer a strong, long-lasting foundation for a healthier, complete smile.",
+    "point1": "Single Tooth Implant",
+    "point2": "Premium Tooth Implant (with Crown)",
+    "point3": "Full Mouth Implants",
+    "img": "https://i.postimg.cc/j2ZTyVmW/Group-48-2.png"
+  },
+  {
+    "id": "5",
+    "title": "Root Canal",
+    "title2": "Treatment",
+    "details": "A root canal is a safe and effective way to save a badly decayed or infected tooth. Instead of removing the tooth, the infected pulp is cleaned, sealed, and restored — relieving pain while keeping your natural tooth in place. With modern techniques, the procedure is comfortable and usually done in one or two visits.",
+    "point1": "Root Canal (Front Tooth)",
+    "point2": "Root Canal (Premolar)",
+    "point3": "Post & Core (if required)",
+    "img": "https://i.postimg.cc/MT6rVcSD/Group-46-2.png"
+  },
+  {
+    "id": "6",
+    "title": "Pediatric",
+    "title2": "Dentistry",
+    "details": "Pediatric dentistry focuses on the dental care of infants, children, and teens. From baby teeth to braces, we provide gentle, friendly, and fun dental care in a comfortable environment. Our goal is to make every visit a positive experience and help kids build healthy dental habits for life.",
+    "point1": "Tooth Filling",
+    "point2": "Tooth Extraction (Milk Tooth)",
+    "point3": "First Dental Check-up & Consultation",
+    "img": "https://i.postimg.cc/Hxn9Tbmf/Group-49.png"
+  }
+]

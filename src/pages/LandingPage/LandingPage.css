@@ -1,0 +1,18 @@
+.landing-page-hero-section,
+.landing-page-contact-section,
+.landing-page-service-section {
+  position: relative;   /* or absolute/fixed/sticky, depending on your layout */
+}
+
+.landing-page-hero-section {
+  z-index: -1;
+}
+
+.landing-page-contact-section {
+  z-index: 99999;
+}
+
+.landing-page-service-section {
+  z-index: -1;
+  margin-top: -80px;
+}
