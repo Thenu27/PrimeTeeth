@@ -2,8 +2,13 @@ import ServiceModelExp from '../../components/Threejs/ServiceModelExp/ServiceMod
 import StarModelExp from '../../components/Threejs/StarModelExp/StarModelExp';
 import ToolsExp from '../../components/Threejs/ToolsExp/ToolsExp';
 import './AboutPage.css';
-
+import { useEffect } from 'react';
 const AboutPage=()=>{
+
+    useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
+    
     return(
         <div className='about-page'>
             <div className='page-header'>
@@ -63,7 +68,7 @@ const AboutPage=()=>{
                 <div className='about-story-inner-container about-story-inner-container2'>
 
                     <div className='about-story-img-conatiner about-story-doc-img-container'>
-                        <img className='about-story-doc-img' src='/DocPic.svg'/>
+                        <img className='about-story-doc-img' src='/Doctor.svg'/>
                     </div>                    
                     <div className='about-story'>
                         <p className='about-story-text'>Hi, I’m Dr. John Doe — and I’m passionate about helping people smile with confidence. With over 10 years of experience in general and cosmetic dentistry, my goal has always been to provide gentle, high-quality care in a way that makes patients feel truly comfortable.</p>

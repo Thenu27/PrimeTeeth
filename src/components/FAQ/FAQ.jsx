@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+// src/components/FAQ/FAQSection.jsx
+import React, { useState, useRef, useEffect } from 'react';
 import './FAQ.css';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const faqData = [
   {
     question: 'How often should I visit the dentist?',
     answer:
-      'We recommend visiting every 6 months for a routine check‑up and cleaning, unless advised otherwise by your dentist.',
+      'We recommend visiting every 6 months for a routine check-up and cleaning, unless advised otherwise by your dentist.',
   },
   {
     question: 'Do you accept dental insurance?',
@@ -26,28 +31,66 @@ const faqData = [
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
+  const sectionRef = useRef(null);
+  const leftRef    = useRef(null);
+  const listRef    = useRef(null);
 
   const toggle = (idx) => {
     setOpenIndex(openIndex === idx ? null : idx);
   };
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start:   'top 80%',
+          toggleActions: 'play none none reverse',
+        },
+      });
+
+      // 1) Slide in the left panel
+      tl.from(leftRef.current, {
+        x: -100,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power3.out',
+      })
+      // 2) Fade up each FAQ item staggered
+      .from(
+        listRef.current.children,
+        {
+          y: 20,
+          opacity: 0,
+          duration: 0.6,
+          ease: 'power3.out',
+          stagger: 0.1,
+        },
+        '-=0.4' // overlap with left-panel animation
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="faq-section">
+    <section className="faq-section" ref={sectionRef}>
       <div className="faq-section-container">
         {/* LEFT */}
-        <div className="faq-section-left">
+        <div className="faq-section-left" ref={leftRef}>
           <p className="faq-section-label">FAQs</p>
           <h1 className="faq-section-title">
             You Asked,<br /> We<span className="faq-span"> Answered!</span>
           </h1>
           <p className="faq-section-subtitle">
-            Explore our most asked questions to feel fully informed in your dental journey.
+            Explore our most asked questions to feel fully informed in your
+            dental journey.
           </p>
         </div>
 
         {/* RIGHT */}
         <div className="faq-section-right">
-          <ul className="faq-section-list">
+          <ul className="faq-section-list" ref={listRef}>
             {faqData.map((item, idx) => (
               <li
                 key={idx}
@@ -67,9 +110,7 @@ export default function FAQSection() {
                     {openIndex === idx ? '−' : '+'}
                   </span>
                 </button>
-                <div className="faq-section-answer">
-                  {item.answer}
-                </div>
+                <div className="faq-section-answer">{item.answer}</div>
               </li>
             ))}
           </ul>

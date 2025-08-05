@@ -1,6 +1,10 @@
 import './GalleryPage.css';
 
 const GalleryPage=()=>{
+
+        useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
     return(
         <div className='gallery-page'>
             <div className='page-header'>

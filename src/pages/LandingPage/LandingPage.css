@@ -5,7 +5,7 @@
 }
 
 .landing-page-hero-section {
-  z-index: -1;
+  z-index: 1;
 }
 
 .landing-page-contact-section {
@@ -13,6 +13,6 @@
 }
 
 .landing-page-service-section {
-  z-index: -1;
+  z-index: 1;
   margin-top: -80px;
 }

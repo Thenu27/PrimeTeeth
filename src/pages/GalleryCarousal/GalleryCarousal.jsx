@@ -1,4 +1,4 @@
-import React, { useRef, useState, useLayoutEffect } from 'react';
+import React, { useRef, useState, useLayoutEffect, useEffect } from 'react';
 import { gsap } from 'gsap';
 import './GalleryCarousal.css';
 
@@ -7,6 +7,10 @@ const GalleryCarousel = () => {
   const imageRef1 = useRef(null);
   const imageRef2 = useRef(null);
   const imageRef3 = useRef(null);
+
+        useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
 
   // track if we've done the initial setup
   const isInitial = useRef(true);

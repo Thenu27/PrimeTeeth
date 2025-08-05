@@ -1,4 +1,6 @@
 import './contactPage.css'
+import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaTripadvisor } from 'react-icons/fa';
+
 
 const ContactPage = () => {
     return(
@@ -54,14 +56,14 @@ const ContactPage = () => {
 
                     <div className='contact-social-media-container'>
                         <button className='contact-social-media-btn'>
-                            <img src='/facebookContact.svg' alt='Facebook'/>
+                            <FaFacebookF className="location-icon contact-icon" />
                         </button>
-                         <button className='contact-social-media-btn'>
-                            <img src='/facebookContact.svg' alt='Facebook'/>
+                         {/* <button className='contact-social-media-btn'>
+                            <FaInstagram className="location-icon contact-icon" />
                         </button>
                         <button className='contact-social-media-btn'>
                             <img src='/facebookContact.svg' alt='Facebook'/>
-                        </button>                        
+                        </button>                         */}
                     </div>
 
                     <div className='contact-page-btn-container'>

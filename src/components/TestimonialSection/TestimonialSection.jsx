@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './TestimonialSection.css';
-// import PatientIcon from '../assets/patient-icon.svg'; // replace with your icon path
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const testimonials = [
   {
     text:
-      'I used to be terrified of going to the dentist, but this clinic changed that completely. The staff is so kind and the care I received was top‑notch. Highly recommend!',
+      'I used to be terrified of going to the dentist, but this clinic changed that completely. The staff is so kind and the care I received was top-notch. Highly recommend!',
     author: 'Dilani R.',
   },
   {
@@ -24,6 +27,11 @@ export default function TestimonialSection() {
   const [current, setCurrent] = useState(0);
   const length = testimonials.length;
 
+  const containerRef = useRef(null);
+  const titleRef = useRef(null);
+  const subtextRef = useRef(null);
+  const cardcontainerRef =useRef(null);
+
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
@@ -32,28 +40,67 @@ export default function TestimonialSection() {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: 'top 60%',
+          end: 'bottom 50%',
+          toggleActions: 'play none none reverse',
+          markers: true, // set to false in production
+        },
+      });
+
+      tl.from(titleRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: 'power3.out',
+      })
+      .from(subtextRef.current, {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: 'power3.out',
+      }, '-=0.7')
+
+     .from(cardcontainerRef.current, {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: 'power3.out',
+      }, '-=0.7');
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="testimonial-section">
+    <section ref={containerRef} className="testimonial-section">
       <div className="testimonial-section-header">
-        <h2 className="services-section-title">
-          What Our <span className='faq-span'>Patients Say</span> 
+        <h2 ref={titleRef} className="services-section-title">
+          What Our <span className="faq-span">Patients Say</span>
         </h2>
-        <p className="testimonial-section-subtitle">
-          We love making people smile! Here’s what some of our wonderful patients have to say about their experience with us.
+        <p ref={subtextRef} className="testimonial-section-subtitle">
+          We love making people smile! Here’s what some of our wonderful patients have
+          to say about their experience with us.
         </p>
         <img
-        //   src={PatientIcon}
+          // src={PatientIcon}
           alt=""
           className="testimonial-section-icon"
         />
       </div>
 
-      <div className="testimonial-section-carousel">
+      <div ref={cardcontainerRef} className="testimonial-section-carousel">
         <button
           className="testimonial-section-arrow testimonial-section-arrow--left"
           onClick={prevSlide}
           aria-label="Previous testimonial"
-        >‹</button>
+        >
+          ‹
+        </button>
 
         {testimonials.map((item, idx) => (
           <div
@@ -66,7 +113,6 @@ export default function TestimonialSection() {
           >
             {idx === current && (
               <div className="testimonial-section-card">
-                {/* <p className="testimonial-section-quote">“</p> */}
                 <p className="testimonial-section-text">{item.text}</p>
                 <p className="testimonial-section-author">{item.author}</p>
               </div>
@@ -78,7 +124,9 @@ export default function TestimonialSection() {
           className="testimonial-section-arrow testimonial-section-arrow--right"
           onClick={nextSlide}
           aria-label="Next testimonial"
-        >›</button>
+        >
+          ›
+        </button>
       </div>
 
       <div className="testimonial-section-dots">

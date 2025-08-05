@@ -52,18 +52,29 @@
    margin-top: 15px;
 }
 
-.footer-social-btn{
+.footer-social-btn {
    width: 57px;
    height: 57px;
    border-radius: 30px;
    display: flex;
    align-items: center;
    justify-content: center;
+   transition: all 0.3s ease; /* Smooth hover transition */
+   background-color: white;   /* Optional: ensure button has a visible bg */
+}
+
+.footer-social-btn:hover {
+   transform: translateY(-5px);
+   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .social-btn{
    width: 50%;
    height: 50%;
+}
+
+.social-btn:hover{
+    
 }
 
 .location-icon{
