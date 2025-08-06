@@ -4,6 +4,7 @@ import ServiceModelExp from '../Threejs/ServiceModelExp/ServiceModelExp';
 import './ServiceSection.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useNavigate } from 'react-router-dom';
 
 // Register the plugin once
 gsap.registerPlugin(ScrollTrigger);
@@ -31,28 +32,28 @@ const servicesData = [
     description:
       'Straighten misaligned teeth with traditional braces or clear aligners for a more confident smile.',
     image:
-      'https://i.postimg.cc/6qpqgV9j/shedrack-salami-Bc-Ba5-K14-BU-unsplash-4-1.png',
+      'https://i.postimg.cc/DzGr4bs5/shedrack-salami-Bc-Ba5-K14-BU-unsplash-4-3.png',
   },
   {
     id: 4,
     title: 'Dental Implants',
     description:
       'A permanent solution to replace missing teeth with natural-looking, long-lasting results.',
-    image: '/assets/images/dental-implants.jpg',
+    image: 'https://i.postimg.cc/T3zmxYSb/shedrack-salami-Bc-Ba5-K14-BU-unsplash-4-4.png',
   },
   {
     id: 5,
     title: 'Root Canal Treatment',
     description:
       'Relieve tooth pain and save your natural tooth by treating infections deep within the root.',
-    image: '/assets/images/root-canal.jpg',
+    image: 'https://i.postimg.cc/W4pDTF8h/shedrack-salami-Bc-Ba5-K14-BU-unsplash-4-6.png',
   },
   {
     id: 6,
     title: 'Pediatric Dentistry',
     description:
       'Gentle and fun dental care tailored specially for kids to keep their growing smiles healthy.',
-    image: '/assets/images/pediatric.jpg',
+    image: 'https://i.postimg.cc/mZ97d95s/shedrack-salami-Bc-Ba5-K14-BU-unsplash-4-7.png',
   },
 ];
 
@@ -62,7 +63,9 @@ const ServicesSection = () => {
   const titleRef = useRef(null);
   const subtextRef = useRef(null);
   const cardRef = useRef(null);
+  
 
+  const navigate = useNavigate();
 
 
 useEffect(() => {
@@ -71,7 +74,6 @@ useEffect(() => {
       scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top 70%',
-        markers: true,
         toggleActions: 'play none none reverse',
       },
       defaults: { ease: 'power3.out', duration: 1 },
@@ -129,7 +131,7 @@ useEffect(() => {
               <div className="service-section-content">
                 <h3 className="service-section-title">{service.title}</h3>
                 <p className="service-section-desc">{service.description}</p>
-                <button className="service-section-button">
+                <button onClick={()=>navigate('/services')} className="service-section-button">
                   Learn more
                 </button>
               </div>

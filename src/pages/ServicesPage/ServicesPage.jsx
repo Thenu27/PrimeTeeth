@@ -4,11 +4,13 @@ import './ServicesPage.css';
 import serviceData from '../../data/servicePage.json';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useNavigate } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ServicesPage = () => {
   const sectionRef = useRef(null);
+  const navigate =useNavigate()
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -39,12 +41,7 @@ const ServicesPage = () => {
         stagger: 0.2,
       }, '-=0.4')
       // 3) Pop in the Contact button
-      .from(button, {
-        scale: 0.8,
-        opacity: 0,
-        duration: 0.6,
-        ease: 'back.out(1.7)',
-      }, '-=0.3');
+
     }, sectionRef);
 
     return () => ctx.revert();
@@ -119,9 +116,9 @@ const ServicesPage = () => {
         ))}
       </div>
 
-      <div className="about-page-btn-container">
-        <button className="about-page-btn">Contact Us</button>
-      </div>
+            <div className='about-page-btn-container'>
+                <button onClick={()=>{navigate('/contact')}} className='about-page-btn'>Contact Us</button>
+            </div>
     </div>
   );
 };

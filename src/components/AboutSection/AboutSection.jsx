@@ -4,6 +4,7 @@ import './AboutSection.css';
 import AboutSectionExp from '../Threejs/AboutSectionExp/AboutSectionExp';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useNavigate } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,6 +22,8 @@ const AboutSection = () => {
   const listRef    = useRef(null);
   const modelRef   = useRef(null);
 
+  const navigate = useNavigate()
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
@@ -31,9 +34,7 @@ const AboutSection = () => {
         },
       });
 
-      tl
-      // 1. Left side slides in from left
-      .from(leftRef.current, {
+      tl.from(leftRef.current, {
         x: -100,
         opacity: 0,
         duration: 1,
@@ -46,7 +47,7 @@ const AboutSection = () => {
         duration: 1,
         ease: 'power3.out',
       }, '-=0.6')
-      // 3. Feature list items fade up with stagger
+
       .from(listRef.current.children, {
         y: 20,
         opacity: 0,
@@ -54,13 +55,7 @@ const AboutSection = () => {
         duration: 0.8,
         ease: 'power3.out',
       }, '-=0.5')
-      // 4. 3D model pops in with a little bounce
-      .from(modelRef.current, {
-        scale: 0.5,
-        opacity: 0,
-        duration: 1,
-        ease: 'back.out(1.7)',
-      }, '-=0.6');
+
     }, sectionRef);
 
     return () => ctx.revert();
@@ -82,7 +77,7 @@ const AboutSection = () => {
           <p className="doc-name-text">
             DDS, MS – Specialist in Orthodontics
           </p>
-          <button className="doc-name-btn">Contact</button>
+          <button onClick={()=>{navigate('/contact')}} className="doc-name-btn">Contact</button>
         </div>
       </div>
 

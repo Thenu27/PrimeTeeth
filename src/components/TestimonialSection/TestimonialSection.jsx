@@ -48,7 +48,6 @@ export default function TestimonialSection() {
           start: 'top 60%',
           end: 'bottom 50%',
           toggleActions: 'play none none reverse',
-          markers: true, // set to false in production
         },
       });
 

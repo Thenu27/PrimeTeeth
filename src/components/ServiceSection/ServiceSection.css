@@ -66,8 +66,10 @@
   height: 200px;
   object-fit: 100% 100%;
   margin: auto;
-  padding: 5px;
+  padding: 0px;
   margin-top: -30px;
+    box-shadow: 0px 7px 35px rgba(0,0,0,0.25);
+border-radius: 37.02px;
 
 }
 
@@ -126,6 +128,7 @@ text-align: left;
 .service-section-button:hover {
   background-color: #e73370;
 }
+
 
 /* responsive tweaks if you want 2 columns on tablets, 1 on phones */
 @media (max-width: 900px) {

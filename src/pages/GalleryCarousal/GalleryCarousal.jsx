@@ -11,7 +11,48 @@ const GalleryCarousel = () => {
         useEffect(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, []);
+    const sectionRef = useRef(null);
+    const headerRef = useRef(null);
+    const subtextRef = useRef(null);
+    const cardRef = useRef(null)
 
+    
+      useEffect(() => {
+    const ctx = gsap.context(() => {
+
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start:   'top 75%',
+          toggleActions: 'play none none reverse',
+        },
+        defaults: { ease: 'power3.out' },
+      });
+
+      // 1) Fade down header
+      tl.from(headerRef.current, {
+        y: -50,
+        opacity: 0,
+        duration: 0.8,
+      })
+      .from(subtextRef.current, {
+        y: -50,
+        opacity: 0,
+        duration: 0.8,
+      },'-=0.6')
+      // 2) Stagger cards in with fade-up
+      .from(cardRef.current, {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+      }, '-=0.4')
+
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
   // track if we've done the initial setup
   const isInitial = useRef(true);
 
@@ -58,14 +99,14 @@ const GalleryCarousel = () => {
   const nextSlide = () => setActiveIndex(i => (i + 1) % 3);
 
   return (
-    <div className="gallery-carousal">
+    <div ref={sectionRef} className="gallery-carousal">
       <div className='page-header'>
-        <h1 className='header-title'>Gallery</h1>
+        <h1 ref={headerRef} className='header-title'>Gallery</h1>
       </div>
             <div className='about-page-sub-text-container'>
-                <p className='about-page-sub-text'>Creating beautiful, healthy smiles for over 15 years with compassionate care and cutting-edge technology.</p>
+                <p ref={subtextRef} className='about-page-sub-text'>Creating beautiful, healthy smiles for over 15 years with compassionate care and cutting-edge technology.</p>
             </div> 
-      <div className="carousel-container">
+      <div ref={cardRef} className="carousel-container">
         <div className="slide" ref={imageRef1}>
           <img src="https://i.postimg.cc/SNdQWxHK/Rectangle-59.png" alt="Gallery image 1" />
         </div>

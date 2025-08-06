@@ -85,13 +85,18 @@
     align-items: center;
     flex-direction: column;
     padding: 0 20px;
+    justify-content: center;
+
 }
 
 .contact-iframe-container{
-    width: 70%;
+    width: 100%;
     height: 389px;
+    margin: auto;
     margin-top: 100px;
     transition: transform 0.2s ease-in-out;
+    padding-right: 100px;
+
 }
 
 .contact-iframe-container:hover{
@@ -210,7 +215,7 @@
     }
     
     .contact-iframe-container{
-        width: 80%;
+        width: 100%;
         height: 300px;
         margin-top: 60px;
     }
