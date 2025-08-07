@@ -51,7 +51,7 @@ const Footer = () => {
             <p className="link-info">+94 77 123 5678</p>
           </div>
 
-          <div className="link-group">
+          <div className="link-group link-group2">
             <FaEnvelope className="location-icon" />
             <p className="link-info">info@primeteeth.com</p>
           </div>
