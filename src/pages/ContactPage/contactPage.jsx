@@ -64,7 +64,7 @@ const ContactPage = () => {
                             <h2 className='contact-type'>Phone</h2>
                             <p className='contact-info'>+94 77 749 0691</p>
                         </div>
-                        <img src='/locationImg.svg'/>
+                        <img src='/ContactIconPhone.svg'/>
                     </div>
 
                     <div className='contact-type-container'>
@@ -72,7 +72,7 @@ const ContactPage = () => {
                             <h2 className='contact-type'>Email</h2>
                             <p className='contact-info'>primeteethrajagiriya@gmail.com</p>
                         </div>
-                        <img src='/locationImg.svg'/>
+                        <img src='/contactEmail.svg'/>
                     </div>
 
                     <div className='contact-type-container'>
@@ -82,7 +82,7 @@ const ContactPage = () => {
                             <p className='contact-info'>Saturday-Sunday : 5.00 pm to 9.00pm</p>
 
                         </div>
-                        <img src='/locationImg.svg'/>
+                        <img src='/ContactTime.svg'/>
                     </div>
                 </div>                    
                 <div className='divider'></div>

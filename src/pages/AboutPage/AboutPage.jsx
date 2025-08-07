@@ -88,28 +88,31 @@ const AboutPage=()=>{
 
       },'<+0.2')
 
+
+    gsap.from(docinfoRef.current.children,{
+          x: 50,
+          opacity: 0,
+          duration: 0.8,
+          stagger:0.3,
+                  scrollTrigger: {
+              trigger: docinfoRef.current,
+              start: 'top 70%',
+              // toggleActions: 'play none none reverse',
+          }
+      })      
+
     gsap.from(docimgRef.current, {
         x: -50,
         opacity: 0,
         duration: 0.8,
         ease: 'power3.out',
         scrollTrigger: {
-            trigger: docimgRef.current,
+            trigger: docinfoRef.current,
             start: 'top 70%',
             // toggleActions: 'play none none reverse',
         },
     })
-   gsap.from(docinfoRef.current.children,{
-        x: 50,
-        opacity: 0,
-        duration: 0.8,
-        stagger:0.3,
-                scrollTrigger: {
-            trigger: docimgRef.current,
-            start: 'top 70%',
-            // toggleActions: 'play none none reverse',
-        }
-    })
+
 
 
     }, aboutStoryRef)
@@ -187,8 +190,7 @@ const AboutPage=()=>{
                     <div ref={docinfoRef} className='about-story'>
                         <p className='about-story-text'>Hi, I’m Dr. John Doe — and I’m passionate about helping people smile with confidence. With over 10 years of experience in general and cosmetic dentistry, my goal has always been to provide gentle, high-quality care in a way that makes patients feel truly comfortable.</p>
                         <p className='about-story-text'>I earned my Bachelor of Dental Surgery (BDS) and went on to complete additional training in cosmetic and restorative dentistry. I believe in combining advanced techniques with a personalized approach, so every patient gets the care that’s right for them.</p>
-                        <p className='about-story-text'>Whether you’re visiting for a routine check-up or a complete smile transformation, I’m here to listen, guide, and give you the best possible dental experience. Your smile is in good hands.</p>
-                    
+                        <p className='about-story-text'>Whether you’re visiting for a routine check-up or a complete smile transformation, I’m here to listen, guide, and give you the best possible dental experience. Your smile is in good hands.</p>                  
                     </div>
 
 
