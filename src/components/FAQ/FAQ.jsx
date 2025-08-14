@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './FAQ.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import faqSection from '../../data/faqSection.json'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,7 +92,7 @@ export default function FAQSection() {
         {/* RIGHT */}
         <div className="faq-section-right">
           <ul className="faq-section-list" ref={listRef}>
-            {faqData.map((item, idx) => (
+            {faqSection.map((item, idx) => (
               <li
                 key={idx}
                 className={

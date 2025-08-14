@@ -5,6 +5,7 @@ import './ServiceSection.css';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useNavigate } from 'react-router-dom';
+import servciesSection from '../../data/servciesSection.json'
 
 // Register the plugin once
 gsap.registerPlugin(ScrollTrigger);
@@ -121,16 +122,16 @@ useEffect(() => {
         </p>
 
         <div ref={cardRef} className="services-section-grid">
-          {servicesData.map((service) => (
+          {servciesSection.map((service) => (
             <div  key={service.id} className="service-section-card">
               <img
-                src={service.image}
-                alt={service.title}
+                src={service.img}
+                alt={service.service_title}
                 className="service-section-image"
               />
               <div className="service-section-content">
-                <h3 className="service-section-title">{service.title}</h3>
-                <p className="service-section-desc">{service.description}</p>
+                <h3 className="service-section-title">{service.service_title}</h3>
+                <p className="service-section-desc">{service.service_info}</p>
                 <button onClick={()=>navigate('/services')} className="service-section-button">
                   Learn more
                 </button>

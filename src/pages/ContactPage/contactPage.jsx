@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import { useEffect } from 'react';
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import contactSection from '../../data/contactSection.json'
 
 const ContactPage = () => {
 
@@ -11,7 +12,6 @@ const ContactPage = () => {
     const headerRef = useRef(null);
     const contactinfo = useRef(null);
     const imgRef = useRef(null);
-
     const navigate = useNavigate()
         useEffect(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -54,7 +54,7 @@ const ContactPage = () => {
                     <div className='contact-type-container'>
                         <div className='contact-details'>
                             <h2 className='contact-type'>Address</h2>
-                            <p className='contact-info'>Prime Teeth, Buthgamuwa Rd, Sri Jayawardenepura Kotte 10100</p>
+                            <p className='contact-info'>{contactSection[0].Address}</p>
                         </div>
                         <img src='/locationImg.svg'/>
                     </div>
@@ -62,7 +62,7 @@ const ContactPage = () => {
                     <div className='contact-type-container'>
                         <div className='contact-details'>
                             <h2 className='contact-type'>Phone</h2>
-                            <p className='contact-info'>+94 77 749 0691</p>
+                            <p className='contact-info'>{contactSection[0].phone}</p>
                         </div>
                         <img src='/ContactIconPhone.svg'/>
                     </div>
@@ -70,7 +70,7 @@ const ContactPage = () => {
                     <div className='contact-type-container'>
                         <div className='contact-details'>
                             <h2 className='contact-type'>Email</h2>
-                            <p className='contact-info'>primeteethrajagiriya@gmail.com</p>
+                            <p className='contact-info'>{contactSection[0].Email}</p>
                         </div>
                         <img src='/contactEmail.svg'/>
                     </div>
@@ -78,8 +78,8 @@ const ContactPage = () => {
                     <div className='contact-type-container'>
                         <div className='contact-details'>
                             <h2 className='contact-type'>Open Hours</h2>
-                            <p className='contact-info'>Monday to Friday : 5.00 pm to 9.00pm</p>
-                            <p className='contact-info'>Saturday-Sunday : 5.00 pm to 9.00pm</p>
+                            <p className='contact-info'>{contactSection[0].OpenHoursWeekdays}</p>
+                            <p className='contact-info'>{contactSection[0].OpenHoursWeekends}</p>
 
                         </div>
                         <img src='/ContactTime.svg'/>

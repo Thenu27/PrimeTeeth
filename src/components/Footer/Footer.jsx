@@ -2,6 +2,8 @@ import React from 'react';
 import './Footer.css';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
+import footer from '../../data/footer.json'
+
 
 const Footer = () => {       
   const navigate = useNavigate()
@@ -43,17 +45,17 @@ const Footer = () => {
 
           <div className="link-group">
             <FaMapMarkerAlt className="location-icon" />
-            <p className="link-info">Dental Clinic, Rajagiriya, Colombo</p>
+            <p className="link-info">{footer[0].address}</p>
           </div>
 
           <div className="link-group">
             <FaPhoneAlt className="location-icon" />
-            <p className="link-info">+94 77 123 5678</p>
+            <p className="link-info">{footer[0].phone}</p>
           </div>
 
           <div className="link-group link-group2">
             <FaEnvelope className="location-icon" />
-            <p className="link-info">info@primeteeth.com</p>
+            <p className="link-info">{footer[0].email}</p>
           </div>
         </div>
 

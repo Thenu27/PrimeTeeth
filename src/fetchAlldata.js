@@ -12,6 +12,8 @@ const sheets = {
   servciesSection:process.env.VITE_SHEET_SERVICES_SECTION,
   testimonialSection:process.env.VITE_SHEET_TESTIMONIAL_SECTION,
   contactSection:process.env.VITE_SHEET_CONTACT_US,
+  aboutPage:process.env.VITE_SHEET_ABOUT_PAGE,
+  footer:process.env.VITE_SHEET_FOOTER
 };
 
 // Function to fetch and filter data from Google Sheet

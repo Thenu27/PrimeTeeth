@@ -7,27 +7,25 @@ import FAQ from '../../components/FAQ/FAQ';
 import TestimonialSection from '../../components/TestimonialSection/TestimonialSection';
 import { useEffect, useRef } from 'react';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
-import LocomotiveScroll from 'locomotive-scroll';
 
 const LandingPage=()=>{
 
-  const containerRef = useRef(null);
-  const locoRef = useRef(null);
+
 
     return(
-        <div ref={containerRef} className='landing-page' data-scroll-container>
-            <div className='landing-page-hero-section' data-scroll-section>
+        <div  className='landing-page'>
+            <div className='landing-page-hero-section'>
               <HeroSection/>
             </div>
-            <div className='landing-page-contact-section' data-scroll-section>
+            <div className='landing-page-contact-section'>
               <ContactBar/>
             </div>
-            <div className='landing-page-service-section' data-scroll-section>
+            <div className='landing-page-service-section'>
                 <ServiceSection/>
             </div>
-<div data-scroll-section><AboutSection/></div>
-<div data-scroll-section><FAQ/></div>
-<div data-scroll-section><TestimonialSection/></div>        
+<div ><AboutSection/></div>
+<div ><FAQ/></div>
+<div ><TestimonialSection/></div>        
         </div>
     )
 }

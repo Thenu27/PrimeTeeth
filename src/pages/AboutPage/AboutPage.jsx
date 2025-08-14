@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useNavigate } from 'react-router-dom';
+import aboutPage from '../../data/aboutPage.json'
 
 const AboutPage=()=>{
 
@@ -142,8 +143,8 @@ const AboutPage=()=>{
                          <StarModelExp/>
                     </div>
                     <div className='about-page-card-info'>
-                        <h1 className='about-page-card-title'>15+</h1>
-                        <p className='about-page-card-text'>Years Experience</p>
+                        <h1 className='about-page-card-title'>{aboutPage[0].title}</h1>
+                        <p className='about-page-card-text'>{aboutPage[0].subtext}</p>
                     </div>
                 </div>
 
@@ -152,8 +153,8 @@ const AboutPage=()=>{
                         <ServiceModelExp/>
                     </div>
                     <div className='about-page-card-info'>
-                        <h1 className='about-page-card-title'>100+</h1>
-                        <p className='about-page-card-text'>Happy Patients</p>
+                        <h1 className='about-page-card-title'>{aboutPage[1].title}</h1>
+                        <p className='about-page-card-text'>{aboutPage[1].subtext}</p>
                     </div>                    
                 </div>
 
@@ -162,8 +163,8 @@ const AboutPage=()=>{
                     <ToolsExp/>
                     </div>
                     <div className='about-page-card-info'>
-                        <h1 className='about-page-card-title'>6+</h1>
-                        <p className='about-page-card-text'>Services provided</p>
+                        <h1 className='about-page-card-title'>{aboutPage[2].title}</h1>
+                        <p className='about-page-card-text'>{aboutPage[2].subtext}</p>
                     </div>                    
                 </div>       
 
