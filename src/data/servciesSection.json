@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "service_title": "Cosmetic Dentistry",
+    "service_info": "Enhance the appearance of your smile with treatments like teeth whitening, veneers, and smile makeovers.",
+    "img": "https://i.postimg.cc/HsQ6Zp7J/shedrack-salami-Bc-Ba5-K14-BU-unsplash-3-1.png"
+  },
+  {
+    "id": "2",
+    "service_title": "General Dentistry",
+    "service_info": "Routine checkups, cleanings, and fillings to maintain your oral health and prevent future dental issues.",
+    "img": "https://i.postimg.cc/PxG1gRc6/shedrack-salami-Bc-Ba5-K14-BU-unsplash-4.png"
+  },
+  {
+    "id": "3",
+    "service_title": "Orthodontics",
+    "service_info": "Straighten misaligned teeth with traditional braces or clear aligners for a more confident smile.",
+    "img": "https://i.postimg.cc/DzGr4bs5/shedrack-salami-Bc-Ba5-K14-BU-unsplash-4-3.png"
+  },
+  {
+    "id": "4",
+    "service_title": "Dental Implants",
+    "service_info": "A permanent solution to replace missing teeth with natural-looking, long-lasting results.",
+    "img": "https://i.postimg.cc/T3zmxYSb/shedrack-salami-Bc-Ba5-K14-BU-unsplash-4-4.png"
+  },
+  {
+    "id": "5",
+    "service_title": "Root Canal Treatment",
+    "service_info": "Relieve tooth pain and save your natural tooth by treating infections deep within the root.",
+    "img": "https://i.postimg.cc/W4pDTF8h/shedrack-salami-Bc-Ba5-K14-BU-unsplash-4-6.png"
+  },
+  {
+    "id": "6",
+    "service_title": "Pediatric Dentistry",
+    "service_info": "Gentle and fun dental care tailored specially for kids to keep their growing smiles healthy.",
+    "img": "https://i.postimg.cc/mZ97d95s/shedrack-salami-Bc-Ba5-K14-BU-unsplash-4-7.png"
+  }
+]

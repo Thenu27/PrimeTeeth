@@ -16,3 +16,14 @@
   z-index: 1;
   margin-top: -80px;
 }
+html.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+[data-scroll-container] {
+  min-height: 100vh;
+}
+
+[data-scroll-section] {
+  position: relative;
+}

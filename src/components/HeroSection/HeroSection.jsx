@@ -4,13 +4,15 @@ import Navbar from '../Navbar/Navbar';
 import { gsap } from 'gsap';
 import { useNavigate } from 'react-router-dom';
 
+
 const HeroSection = () => {
   const logoRef = useRef(null);
   const textRef = useRef(null);
   const btnContainerRef = useRef(null);
   const heroContainerRef = useRef(null); // used for context scope
-
+  const locoRef = useRef(null);
   const navigate = useNavigate()
+
 
   useEffect(() => {
     const ctx = gsap.context(() => {

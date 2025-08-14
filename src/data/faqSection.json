@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "question": "How often should if visit the dentist",
+    "answer": "We recommend visiting every 6 months for a routine check-up and cleaning, unless advised otherwise by your dentist."
+  },
+  {
+    "id": "2",
+    "question": "Do you accept dental insurance",
+    "answer": "Yes—we accept most major dental insurance plans. Please contact us if you have any questions about your specific provider."
+  },
+  {
+    "id": "3",
+    "question": "At what age should my child see a dentist",
+    "answer": "The American Academy of Pediatric Dentistry recommends a first visit by their first birthday or within six months of the first tooth coming in."
+  },
+  {
+    "id": "4",
+    "question": "How do i schedule an appointment",
+    "answer": "You can book online via our website, call our office directly, or email us at appointments@yourclinic.com."
+  }
+]

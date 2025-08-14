@@ -20,7 +20,14 @@ const sheets = {
 //   footer: process.env.SHEET_LINK_FOOTER
   // Add more as needed
 
-  servicePage:process.env.VITE_SHEET_LINK_SERVICES_PAGE
+  servicePage:process.env.VITE_SHEET_LINK_SERVICES_PAGE,
+  faqSection:process.env.VITE_SHEET_FAQ_SECTION,
+  contactBar:process.env.VITE_SHEET_CONTACT_BAR,
+  servciesSection:process.env.VITE_SHEET_SERVICES_SECTION,
+  testimonialSection:process.env.VITE_SHEET_TESTIMONIAL_SECTION,
+  contactSection:process.env.VITE_SHEET_CONTACT_US,
+
+
 };
 
 // Function to fetch and filter data from Google Sheet
