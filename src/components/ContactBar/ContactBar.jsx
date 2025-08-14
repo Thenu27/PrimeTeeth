@@ -2,9 +2,12 @@
 import React, { useRef, useEffect } from 'react';
 import './ContactBar.css';
 import { gsap } from 'gsap';
+import contactBar from '../../data/contactBar.json'
 
 const ContactBar = () => {
   const barRef = useRef(null);
+
+  console.log(contactBar)
 
     useEffect(() => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -29,21 +32,21 @@ const ContactBar = () => {
       <div className="contact-category">
         <img src="/smartphone.svg" alt="Phone" />
         <p className="contact-category-title">Contact</p>
-        <p className="contact-category-info">+94 77 123 5678</p>
+        <p className="contact-category-info">{contactBar[0].contact}</p>
       </div>
       <div className="divider"></div>
       <div className="contact-category">
         <img src="/pin.svg" alt="Location" />
         <p className="contact-category-title">Address</p>
         <p className="contact-category-info">
-          Dental Clinic, Rajagiriya, Colombo
+          {contactBar[0].address}
         </p>
       </div>
       <div className="divider"></div>
       <div className="contact-category">
         <img src="/wall-clock.svg" alt="Hours" />
         <p className="contact-category-title">Opening Hours</p>
-        <p className="contact-category-info">9.00 AM - 10.00 PM</p>
+        <p className="contact-category-info">{contactBar[0].openingHours}</p>
       </div>
     </div>
   );

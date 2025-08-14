@@ -6,28 +6,12 @@ dotenv.config();
 
 // Map of file name → env var
 const sheets = {
-//   homePackages: process.env.SHEET_LINK_HOME_PACKAGE,
-//   homeDestination: process.env.SHEET_LINK_HOME_DESTINATION,
-//   homeReviews: process.env.SHEET_LINK_HOME_REVIEWS,
-//   packagePageBasic: process.env.SHEET_LINK_PACKAGE_PAGE_BASIC,
-//   packagePageIternary: process.env.SHEET_LINK_PACKAGE_PAGE_ITERNARY,
-//   packagePageHighlights: process.env.SHEET_LINK_PACKAGE_PAGE_HIGHGLIGHTS,
-//   packagePageInclusion: process.env.SHEET_LINK_PACKAGE_PAGE_INCLUSION,
-//   destinationPage: process.env.SHEET_LINK_PACKAGE_PAGE_DESTINATIONS,
-//   destinationPageContact: process.env.SHEET_LINK_DESTINATION_CONTACT,
-//   aboutPage: process.env.SHEET_LINK_ABOUT_PAGE,
-//   contactPage: process.env.SHEET_LINK_CONTACT_PAGE,
-//   footer: process.env.SHEET_LINK_FOOTER
-  // Add more as needed
-
   servicePage:process.env.VITE_SHEET_LINK_SERVICES_PAGE,
   faqSection:process.env.VITE_SHEET_FAQ_SECTION,
   contactBar:process.env.VITE_SHEET_CONTACT_BAR,
   servciesSection:process.env.VITE_SHEET_SERVICES_SECTION,
   testimonialSection:process.env.VITE_SHEET_TESTIMONIAL_SECTION,
   contactSection:process.env.VITE_SHEET_CONTACT_US,
-
-
 };
 
 // Function to fetch and filter data from Google Sheet
