@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive routes (if any, e.g. admin panel)
+Disallow: /admin/
+
+# Point crawlers to your sitemap
+Sitemap: https://primeteeth.lk/sitemap.xml

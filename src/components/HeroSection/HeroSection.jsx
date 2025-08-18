@@ -55,14 +55,14 @@ const HeroSection = () => {
           <img
             ref={logoRef}
             src="/heroLogo.svg"
-            alt="Prime Teeth Logo"
             className="hero-logo"
+            alt="Prime Teeth Dental Clinic Logo"            
           />
-          <p ref={textRef} className="hero-text">
+          <h1 ref={textRef} className="hero-text">
             Advanced, compassionate dental care for the whole family combining
             the latest in pain-free technology with a warm,
             patient-centered approach.
-          </p>
+          </h1>
           <div ref={btnContainerRef} className="hero-btn-container">
             <button onClick={()=>navigate('/contact')} className="hero-btn">Contact Us</button>
             <button onClick={()=>navigate('/About')} className="hero-btn hero-btn2">About Us</button>

@@ -6,7 +6,8 @@ import { useEffect } from 'react';
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useNavigate } from 'react-router-dom';
-import aboutPage from '../../data/aboutPage.json'
+import aboutPage from '../../data/aboutPage.json';
+import SEO from '../../SEO/SEO';
 
 const AboutPage=()=>{
 
@@ -128,6 +129,11 @@ const AboutPage=()=>{
 
     
     return(
+      <>
+      <SEO
+  title="About Prime Teeth | Trusted Dental Clinic in [Location]"
+  description="Learn about Prime Teeth’s 15+ years of dental excellence. Meet Dr. John Doe and discover our story, values, and commitment to gentle, modern dentistry."
+/>
         <div ref={sectionRef} className='about-page'>
             <div className='page-header'>
                 <h1 ref={headerRef} className='header-title'>About Us</h1>
@@ -143,7 +149,7 @@ const AboutPage=()=>{
                          <StarModelExp/>
                     </div>
                     <div className='about-page-card-info'>
-                        <h1 className='about-page-card-title'>{aboutPage[0].title}</h1>
+                        <h2 className='about-page-card-title'>{aboutPage[0].title}</h2>
                         <p className='about-page-card-text'>{aboutPage[0].subtext}</p>
                     </div>
                 </div>
@@ -153,7 +159,7 @@ const AboutPage=()=>{
                         <ServiceModelExp/>
                     </div>
                     <div className='about-page-card-info'>
-                        <h1 className='about-page-card-title'>{aboutPage[1].title}</h1>
+                        <h2 className='about-page-card-title'>{aboutPage[1].title}</h2>
                         <p className='about-page-card-text'>{aboutPage[1].subtext}</p>
                     </div>                    
                 </div>
@@ -163,7 +169,7 @@ const AboutPage=()=>{
                     <ToolsExp/>
                     </div>
                     <div className='about-page-card-info'>
-                        <h1 className='about-page-card-title'>{aboutPage[2].title}</h1>
+                        <h2 className='about-page-card-title'>{aboutPage[2].title}</h2>
                         <p className='about-page-card-text'>{aboutPage[2].subtext}</p>
                     </div>                    
                 </div>       
@@ -173,12 +179,12 @@ const AboutPage=()=>{
             <div  ref={aboutStoryRef} className='about-story-container'>
                 <div className='about-story-inner-container'>
                     <div ref={ourStorytitleRef} className='about-story'>
-                        <h1 className='about-story-title'>Our Story</h1>
+                        <h2 className='about-story-title'>Our Story</h2>
                         <p className='about-story-text'>Since 2015, Prime Teeth has delivered compassionate, high‑quality dental care in a modern, family‑friendly setting. From routine check‑ups and cleanings to cosmetic treatments, orthodontics, implants and pediatric care,</p>
                         <p className='about-story-text'>We use the latest technology and a gentle approach to ensure every visit is smooth and stress‑free. Trusted for excellence, we look forward to helping you smile.</p>
                     </div>
                     <div  className='about-story-img-conatiner'>
-                        <img ref={ourStoryimgRef} className='about-story-img' src='/AboutImg.png'/>
+                        <img ref={ourStoryimgRef} alt='Prime Teeth dental clinic interior' className='about-story-img' src='/AboutImg.png'/>
                     </div>
 
                 </div>
@@ -204,6 +210,8 @@ const AboutPage=()=>{
             </div>
 
         </div>
+              </>
+
     )
 }
 

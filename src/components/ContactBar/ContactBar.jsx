@@ -32,7 +32,9 @@ const ContactBar = () => {
       <div className="contact-category">
         <img src="/smartphone.svg" alt="Phone" />
         <p className="contact-category-title">Contact</p>
-        <p className="contact-category-info">{contactBar[0].contact}</p>
+        <a href={`tel:${contactBar[0].contact}`} className="contact-category-info">
+          {contactBar[0].contact}
+        </a>     
       </div>
       <div className="divider"></div>
       <div className="contact-category">

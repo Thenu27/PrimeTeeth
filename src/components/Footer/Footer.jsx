@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div className="footer-logo-text-container">
         <div className="footer-logo-container">
-          <img className="footer-logo-img" src="/logo-white.svg" />
+        <img className="footer-logo-img" src="/logo-white.svg" alt="Prime Teeth Dental Clinic Logo" />
         </div>
 
         <div className="footer-text-container">
@@ -27,7 +27,7 @@ const Footer = () => {
 
         <div className="footer-media-container">
           <div className="footer-social-btn">
-            <img className="social-btn" src="/facebookContact.svg" />
+            <img alt="Prime Teeth on Facebook" className="social-btn" src="/facebookContact.svg" />
           </div>
           {/* <div className="footer-social-btn">
             <img className="social-btn" src="/public/facebookContact.svg" />
@@ -50,7 +50,7 @@ const Footer = () => {
 
           <div className="link-group">
             <FaPhoneAlt className="location-icon" />
-            <p className="link-info">{footer[0].phone}</p>
+            <a href={`tel:${footer[0].phone}`} className="link-info">{footer[0].phone}</a>
           </div>
 
           <div className="link-group link-group2">

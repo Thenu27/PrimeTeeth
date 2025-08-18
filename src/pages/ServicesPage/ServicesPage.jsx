@@ -5,6 +5,7 @@ import serviceData from '../../data/servicePage.json';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useNavigate } from 'react-router-dom';
+import SEO from '../../SEO/SEO'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,6 +53,11 @@ const ServicesPage = () => {
 }, []);
 
   return (
+    <>
+    <SEO
+      title="Dental Services | Prime Teeth Clinic in Rajagiriya"
+      description="Explore Prime Teeth’s services including dental implants, whitening, cosmetic dentistry, and family care"
+    />
     <div className="services-page" ref={sectionRef}>
       <div className="page-header">
         <h1 className="header-title">Our Services</h1>
@@ -68,7 +74,7 @@ const ServicesPage = () => {
             }`}
           >
             <div className="serivces-content">
-              <h1
+              <h2
                 className={`service-title ${
                   parseInt(service.id) % 2 === 0 ? 'service-title-white' : ''
                 }`}
@@ -84,7 +90,7 @@ const ServicesPage = () => {
                   {' '}
                   {service.title2}
                 </span>
-              </h1>
+              </h2>
               <p
                 className={`service-description ${
                   parseInt(service.id) % 2 === 0 ? 'service-title-white' : ''
@@ -110,16 +116,18 @@ const ServicesPage = () => {
             </div>
 
             <div className="services-image-container">
-              <img src={service.img} className="service-image" alt="" />
+              <img src={service.img} className="service-image" alt={`${service.title} at Prime Teeth`} />
             </div>
           </div>
         ))}
       </div>
 
-            <div className='about-page-btn-container'>
+        <div className='about-page-btn-container'>
                 <button onClick={()=>{navigate('/contact')}} className='about-page-btn'>Contact Us</button>
             </div>
-    </div>
+        </div>
+        </>
+
   );
 };
 
