@@ -68,10 +68,10 @@ const NavBar = () => {
           <Link to='/About'   onClick={() => setMobileMenuOpen(false)}
             className={`navbar-link ${location.pathname === '/About' ? 'active' : ''}${NavbarLinkColor}`} >About Us</Link>
           </li>
-          <li className="navbar-item">
+          {/* <li className="navbar-item">
           <Link to='/gallery'   onClick={() => setMobileMenuOpen(false)}
             className={`navbar-link ${location.pathname === '/gallery' ? 'active' : ''}${NavbarLinkColor}`} >Gallery</Link>
-          </li>
+          </li> */}
           <li className="navbar-item navbar-contact-btn">
           <button  onClick={()=>{navigate('/contact'),setMobileMenuOpen(false)}} className="navbar-btn">Contact Us</button>
           </li>

@@ -192,11 +192,11 @@ const AboutPage=()=>{
                 <div className='about-story-inner-container about-story-inner-container2'>
 
                     <div className='about-story-img-conatiner about-story-doc-img-container'>
-                        <img ref={docimgRef} className='about-story-doc-img' src='/Doctor.svg'/>
+                        <img ref={docimgRef} className='about-story-doc-img' src='/MirrorAndProbe.png'/>
                     </div>                    
                     <div ref={docinfoRef} className='about-story'>
-                        <p className='about-story-text'>Hi, I’m Dr. John Doe — and I’m passionate about helping people smile with confidence. With over 10 years of experience in general and cosmetic dentistry, my goal has always been to provide gentle, high-quality care in a way that makes patients feel truly comfortable.</p>
-                        <p className='about-story-text'>I earned my Bachelor of Dental Surgery (BDS) and went on to complete additional training in cosmetic and restorative dentistry. I believe in combining advanced techniques with a personalized approach, so every patient gets the care that’s right for them.</p>
+                        <p className='about-story-text'>Hi, I’m Dr. Venura Abeyrathne — and I’m passionate about helping people smile with confidence. With over 15 years of experience in general and cosmetic dentistry, my goal has always been to provide gentle, high-quality care in a way that makes patients feel truly comfortable.</p>
+                        <p className='about-story-text'>I have worked in both government and private dental sectors, gaining broad experience across different areas of care. With additional training in cosmetic and restorative dentistry, I focus on combining advanced techniques with a personalized approach to ensure every patient receives the treatment best suited to their needs.</p>
                         <p className='about-story-text'>Whether you’re visiting for a routine check-up or a complete smile transformation, I’m here to listen, guide, and give you the best possible dental experience. Your smile is in good hands.</p>                  
                     </div>
 

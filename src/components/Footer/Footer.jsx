@@ -76,9 +76,9 @@ const Footer = () => {
             <a onClick={()=>navigate('/About')} className="link-info">About</a>
           </div>
 
-          <div className="link-group">
+          {/* <div className="link-group">
             <a onClick={()=>navigate('/gallery')} className="link-info">Gallery</a>
-          </div>
+          </div> */}
 
 
         </div>

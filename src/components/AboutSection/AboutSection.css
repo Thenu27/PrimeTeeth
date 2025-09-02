@@ -101,6 +101,7 @@
 
 .doc-highlight{
     color: #662382;
+    
 }
 
 .doc-name-text{
@@ -123,6 +124,7 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
 .doc-name-btn:hover{

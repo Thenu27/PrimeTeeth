@@ -5,8 +5,8 @@
     "title2": "Dentistry",
     "details": "Cosmetic dentistry is all about enhancing the appearance of your smile. Whether you’re looking to whiten your teeth, fix chips or gaps, or get a full smile makeover, our cosmetic treatments are designed to help you smile with confidence. We combine modern techniques with a gentle approach to deliver beautiful, natural-looking results.",
     "point1": "Teeth Whitening",
-    "point2": "Teeth Whitening",
-    "point3": "Teeth Whitening",
+    "point2": "Veneers",
+    "point3": "Crowns and bridges",
     "img": "https://i.postimg.cc/sDBp6sD9/Group-46.png"
   },
   {
@@ -24,9 +24,9 @@
     "title": "General",
     "title2": "Dentistry",
     "details": "General dentistry focuses on maintaining your overall oral health through regular check-ups, cleanings, and basic treatments. From preventing tooth decay to treating cavities and gum issues, we’re here to keep your smile healthy, clean, and pain-free — for all ages.",
-    "point1": "Teeth Whitening",
-    "point2": "Dental Veneers",
-    "point3": "Smile make over package",
+    "point1": "Extractions and Fillings",
+    "point2": "Tooth cleaning (Scaling)",
+    "point3": "Minor oral surgery (wisdom tooth removal surgery, Mucocele removal)",
     "img": "https://i.postimg.cc/43W4GgL8/Group-48-1.png"
   },
   {
@@ -44,9 +44,9 @@
     "title": "Root Canal",
     "title2": "Treatment",
     "details": "A root canal is a safe and effective way to save a badly decayed or infected tooth. Instead of removing the tooth, the infected pulp is cleaned, sealed, and restored — relieving pain while keeping your natural tooth in place. With modern techniques, the procedure is comfortable and usually done in one or two visits.",
-    "point1": "Root Canal (Front Tooth)",
-    "point2": "Root Canal (Premolar)",
-    "point3": "Post & Core (if required)",
+    "point1": "Root Canal therapy",
+    "point2": "Post and Core (if required)",
+    "point3": "Crowns (if required)",
     "img": "https://i.postimg.cc/MT6rVcSD/Group-46-2.png"
   },
   {
@@ -54,9 +54,9 @@
     "title": "Pediatric",
     "title2": "Dentistry",
     "details": "Pediatric dentistry focuses on the dental care of infants, children, and teens. From baby teeth to braces, we provide gentle, friendly, and fun dental care in a comfortable environment. Our goal is to make every visit a positive experience and help kids build healthy dental habits for life.",
-    "point1": "Tooth Filling",
-    "point2": "Tooth Extraction (Milk Tooth)",
-    "point3": "First Dental Check-up & Consultation",
+    "point1": "Tooth Filling for children",
+    "point2": "Checkup and Consultation",
+    "point3": "Cavity prevention (Flouride application and Fissure sealents)",
     "img": "https://i.postimg.cc/Hxn9Tbmf/Group-49.png"
   }
 ]

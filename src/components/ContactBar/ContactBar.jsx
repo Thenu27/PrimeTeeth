@@ -46,9 +46,9 @@ const ContactBar = () => {
       </div>
       <div className="divider"></div>
       <div className="contact-category">
-        <img src="/wall-clock.svg" alt="Hours" />
-        <p className="contact-category-title">Opening Hours</p>
-        <p className="contact-category-info">{contactBar[0].openingHours}</p>
+        <img src="/email.png" alt="Hours" />
+        <p className="contact-category-title">Email</p>
+        <p className="contact-category-info">primeteethrajagiriya@gmail.com</p>
       </div>
     </div>
   );

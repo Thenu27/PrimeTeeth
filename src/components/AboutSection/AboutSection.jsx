@@ -67,16 +67,16 @@ const AboutSection = () => {
       <div className="about-section-left" ref={leftRef}>
         <img
           className="about-section-left-img"
-          src="/DocPic.png"
+          src="/MirrorAndProbe.png"
           alt="Dr. John Doe"
         />
         <div className="doc-name-container">
           <h1 className="doc-name">
-            Dr. <span className="doc-highlight">John Doe</span>
+            Dr. <span className="doc-highlight">Venura Abeyrathne</span>
           </h1>
-          <p className="doc-name-text">
+          {/* <p className="doc-name-text">
             DDS, MS – Specialist in Orthodontics
-          </p>
+          </p> */}
           <button onClick={()=>{navigate('/contact')}} className="doc-name-btn">Contact</button>
         </div>
       </div>
