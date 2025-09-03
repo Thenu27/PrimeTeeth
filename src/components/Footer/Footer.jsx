@@ -55,7 +55,7 @@ const Footer = () => {
 
           <div className="link-group link-group2">
             <FaEnvelope className="location-icon" />
-            <p className="link-info">{footer[0].email}</p>
+            <p className="link-info">primeteethrajagiriya@gmail.com</p>
           </div>
         </div>
 
@@ -89,7 +89,7 @@ const Footer = () => {
       <div className='footer-bottom'>
         <div className='footer-divider'></div>
           <p className="footer-copyright">
-          © 2025 Prime Teeth. All Rights Reserved. Powered by 
+          © 2024 Prime Teeth. All Rights Reserved. Powered by 
           <a href="https://www.technadiligens.com" target="_blank" rel="noopener noreferrer" className="techna-link">
               TechnaDiligens
           </a>.
