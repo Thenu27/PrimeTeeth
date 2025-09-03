@@ -6,19 +6,19 @@ import sitemap from 'vite-plugin-sitemap'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),
-    sitemap({
-      hostname: 'https://primeteeth.lk',
-      routes: [
-        '/', 
-        '/about',
-        '/services',
-        '/contact',
-        '/gallery'
-      ],
-      changefreq: 'monthly',
-      priority: 0.8,
-      lastmod: new Date().toISOString()
-    })
+    // sitemap({
+    //   hostname: 'https://primeteeth.lk',
+    //   routes: [
+    //     '/', 
+    //     '/about',
+    //     '/services',
+    //     '/contact',
+    //     '/gallery'
+    //   ],
+    //   changefreq: 'monthly',
+    //   priority: 0.8,
+    //   lastmod: new Date().toISOString()
+    // })
   ],
   
 })
