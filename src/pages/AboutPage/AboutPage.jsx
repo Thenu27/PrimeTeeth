@@ -180,7 +180,7 @@ const AboutPage=()=>{
                 <div className='about-story-inner-container'>
                     <div ref={ourStorytitleRef} className='about-story'>
                         <h2 className='about-story-title'>Our Story</h2>
-                        <p className='about-story-text'>Since 2015, Prime Teeth has delivered compassionate, high‑quality dental care in a modern, family‑friendly setting. From routine check‑ups and cleanings to cosmetic treatments, orthodontics, implants and pediatric care,</p>
+                        <p className='about-story-text'>Since 2024, Prime Teeth has delivered compassionate, high‑quality dental care in a modern, family‑friendly setting. From routine check‑ups and cleanings to cosmetic treatments, orthodontics, implants and pediatric care,</p>
                         <p className='about-story-text'>We use the latest technology and a gentle approach to ensure every visit is smooth and stress‑free. Trusted for excellence, we look forward to helping you smile.</p>
                     </div>
                     <div  className='about-story-img-conatiner'>
