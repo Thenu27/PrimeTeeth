@@ -6,8 +6,8 @@
   },
   {
     "id": "2",
-    "question": "Do you accept dental insurance",
-    "answer": "Yes—we accept most major dental insurance plans. Please contact us if you have any questions about your specific provider."
+    "question": "How can I prevent cavities?",
+    "answer": "Brushing twice a day, flossing daily, limiting sugary foods and drinks, and having regular check-ups are the best ways to prevent cavities."
   },
   {
     "id": "3",
@@ -17,6 +17,6 @@
   {
     "id": "4",
     "question": "How do i schedule an appointment",
-    "answer": "You can book online via our website, call our office directly, or email us at appointments@yourclinic.com."
+    "answer": "You can visit our office directly or give us a call to book an appointment."
   }
 ]
