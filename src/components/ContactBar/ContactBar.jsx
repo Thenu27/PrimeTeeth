@@ -33,7 +33,7 @@ const ContactBar = () => {
         <img src="/smartphone.svg" alt="Phone" />
         <p className="contact-category-title">Contact</p>
         <a href={`tel:${contactBar[0].contact}`} className="contact-category-info">
-          {contactBar[0].contact}
+          (+94) 77 749 0691
         </a>     
       </div>
       <div className="divider"></div>
