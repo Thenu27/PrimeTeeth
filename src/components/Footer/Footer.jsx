@@ -26,8 +26,8 @@ const Footer = () => {
         </div>
 
         <div className="footer-media-container">
-          <div className="footer-social-btn">
-            <img alt="Prime Teeth on Facebook" className="social-btn" src="/facebookContact.svg" />
+          <div onClick={()=>window.open('https://www.facebook.com/primeteethlk','_blank')} className="footer-social-btn">
+            <img  alt="Prime Teeth on Facebook" className="social-btn" src="/facebookContact.svg" />
           </div>
           {/* <div className="footer-social-btn">
             <img className="social-btn" src="/public/facebookContact.svg" />

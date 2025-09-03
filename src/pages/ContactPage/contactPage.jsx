@@ -94,8 +94,11 @@ const ContactPage = () => {
                     <h1 className='visit-us'>Visit Us</h1>
 
                     <div className='contact-social-media-container'>
-                        <button className='contact-social-media-btn'>
-                            <FaFacebookF className="location-icon contact-icon" />
+                        <button 
+                        className='contact-social-media-btn'
+                        onClick={() => window.open("https://www.facebook.com/primeteethlk", "_blank")}
+                        >
+                        <FaFacebookF className="location-icon contact-icon" />
                         </button>
                          {/* <button className='contact-social-media-btn'>
                             <FaInstagram className="location-icon contact-icon" />
