@@ -10,11 +10,14 @@ export default defineConfig({
       hostname: 'https://primeteeth.lk',
       routes: [
         '/', 
-        '/About',
+        '/about',
         '/services',
         '/contact',
         '/gallery'
-      ]
+      ],
+      changefreq: 'monthly',
+      priority: 0.8,
+      lastmod: new Date().toISOString()
     })
   ],
   

@@ -65,8 +65,8 @@ const NavBar = () => {
 
           </li> */}
           <li className="navbar-item">
-          <Link to='/About'   onClick={() => setMobileMenuOpen(false)}
-            className={`navbar-link ${location.pathname === '/About' ? 'active' : ''}${NavbarLinkColor}`} >About Us</Link>
+          <Link to='/about'   onClick={() => setMobileMenuOpen(false)}
+            className={`navbar-link ${location.pathname === '/about' ? 'active' : ''}${NavbarLinkColor}`} >About Us</Link>
           </li>
           {/* <li className="navbar-item">
           <Link to='/gallery'   onClick={() => setMobileMenuOpen(false)}

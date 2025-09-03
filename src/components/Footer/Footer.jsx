@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
 
           <div className="link-group">
-            <a onClick={()=>navigate('/About')} className="link-info">About</a>
+            <a onClick={()=>navigate('/about')} className="link-info">About</a>
           </div>
 
           {/* <div className="link-group">
