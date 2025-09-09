@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://primeteeth.lk/sitemap.xml
+Sitemap: https://www.primeteeth.lk/sitemap.xml

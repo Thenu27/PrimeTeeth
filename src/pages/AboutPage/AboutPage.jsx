@@ -154,7 +154,7 @@ const AboutPage=()=>{
                     </div>
                 </div>
 
-                <div className='about-page-card'>
+                {/* <div className='about-page-card'>
                     <div className='about-service-model'>
                         <ServiceModelExp/>
                     </div>
@@ -162,14 +162,14 @@ const AboutPage=()=>{
                         <h2 className='about-page-card-title'>{aboutPage[1].title}</h2>
                         <p className='about-page-card-text'>{aboutPage[1].subtext}</p>
                     </div>                    
-                </div>
+                </div> */}
 
                 <div className='about-page-card'>
                     <div className='about-tools'>
                     <ToolsExp/>
                     </div>
                     <div className='about-page-card-info'>
-                        <h2 className='about-page-card-title'>{aboutPage[2].title}</h2>
+                        <h2 className='about-page-card-title'>12+</h2>
                         <p className='about-page-card-text'>{aboutPage[2].subtext}</p>
                     </div>                    
                 </div>       
