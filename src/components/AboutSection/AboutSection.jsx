@@ -74,6 +74,10 @@ const AboutSection = () => {
           <h1 className="doc-name">
             Dr. <span className="doc-highlight">Venura Abeyrathne</span>
           </h1>
+          <h1 className='and'>And</h1>
+                    <h1 className="doc-name">
+            Dr. <span className="doc-highlight">Nirasha Arachchi</span>
+          </h1>
           {/* <p className="doc-name-text">
             DDS, MS – Specialist in Orthodontics
           </p> */}

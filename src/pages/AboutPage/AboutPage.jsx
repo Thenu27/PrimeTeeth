@@ -195,9 +195,18 @@ const AboutPage=()=>{
                         <img ref={docimgRef} className='about-story-doc-img' src='/MirrorAndProbe.png'/>
                     </div>                    
                     <div ref={docinfoRef} className='about-story'>
-                        <p className='about-story-text'>Hi, I’m Dr. Venura Abeyrathne — and I’m passionate about helping people smile with confidence. With over 15 years of experience in general and cosmetic dentistry, my goal has always been to provide gentle, high-quality care in a way that makes patients feel truly comfortable.</p>
-                        <p className='about-story-text'>I have worked in both government and private dental sectors, gaining broad experience across different areas of care. With additional training in cosmetic and restorative dentistry, I focus on combining advanced techniques with a personalized approach to ensure every patient receives the treatment best suited to their needs.</p>
-                        <p className='about-story-text'>Whether you’re visiting for a routine check-up or a complete smile transformation, I’m here to listen, guide, and give you the best possible dental experience. Your smile is in good hands.</p>                  
+                       <p className='about-story-text'>
+Hi, we’re Dr. Venura Abeyrathne and Dr. Nirasha Arachchi — and we’re passionate about helping people smile with confidence. With over 15 years of combined experience in general and cosmetic dentistry, our goal has always been to provide gentle, high-quality care in a way that makes patients feel truly comfortable.
+</p>
+
+<p className='about-story-text'>
+Having worked in both government and private dental sectors, we bring broad experience across different areas of care. With additional training in cosmetic and restorative dentistry, we focus on combining advanced techniques with a personalized approach to ensure every patient receives the treatment best suited to their needs.
+</p>
+
+<p className='about-story-text'>
+Whether you’re visiting for a routine check-up or a complete smile transformation, we’re here to listen, guide, and give you the best possible dental experience. Your smile is in good hands.
+</p>
+
                     </div>
 
 
