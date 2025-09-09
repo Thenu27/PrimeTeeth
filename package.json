@@ -14,7 +14,6 @@
     "@react-three/drei": "^10.5.1",
     "@react-three/postprocessing": "^3.0.4",
     "dotenv": "^17.2.1",
-    "fs": "^0.0.1-security",
     "gsap": "^3.13.0",
     "locomotive-scroll": "^4.1.4",
     "node-fetch": "^3.3.2",
@@ -37,7 +36,15 @@
     "vite": "^7.0.4",
     "vite-plugin-sitemap": "^0.8.2"
   },
-  "engines": {
-    "node": "22.x"
-  }
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.21.0",
+    "@rollup/rollup-linux-arm64-gnu": "4.21.0"
+  },
+  "overrides": {
+    "rollup": "4.21.0",
+    "@rollup/rollup-linux-x64-gnu": "4.21.0",
+    "@rollup/rollup-linux-arm64-gnu": "4.21.0"
+  },
+  "engines": { "node": "22.x" },
+  "packageManager": "npm@10"
 }
