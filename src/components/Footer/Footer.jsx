@@ -50,7 +50,7 @@ const Footer = () => {
 
           <div className="link-group">
             <FaPhoneAlt className="location-icon" />
-            <a href={`tel:${footer[0].phone}`} className="link-info">{footer[0].phone}</a>
+            <a className="link-info">(+94) 77 749 0691</a>
           </div>
 
           <div className="link-group link-group2">

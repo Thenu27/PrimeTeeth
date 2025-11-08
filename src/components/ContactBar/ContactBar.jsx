@@ -41,7 +41,7 @@ const ContactBar = () => {
         <img src="/pin.svg" alt="Location" />
         <p className="contact-category-title">Address</p>
         <p className="contact-category-info">
-          {contactBar[0].address}
+          47, Buthgamuwa Rd, Welikada, Rajagiriya
         </p>
       </div>
       <div className="divider"></div>
