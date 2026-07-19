@@ -32,7 +32,7 @@ const ContactBar = () => {
       <div className="contact-category">
         <img src="/smartphone.svg" alt="Phone" />
         <p className="contact-category-title">Contact</p>
-        <a href={`tel:(+94)777490691`} className="contact-category-info">
+        <a href="tel:(+94)777490691" className="contact-category-info">
           (+94) 77 749 0691
         </a>     
       </div>
