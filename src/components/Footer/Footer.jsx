@@ -21,7 +21,7 @@ const Footer = () => {
             At Prime Teeth, we’re dedicated to providing gentle,
             high-quality dental care for the whole family. With a friendly team,
             modern technology, and a focus on patient comfort, we make every
-            visit a positive experience, because your smile deserves the best.
+            visit a positive experience, because your smile deserves the bet.
           </p>
         </div>
 
